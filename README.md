@@ -11,7 +11,7 @@ A custom adblocker that blocks ads, cookies, and IPs for enhanced security. This
 
 ## Installation
 
-Follow these steps to install and test the Super Adblocker on Google Chrome:
+Follow these steps to install and test the Adblock Open Source on Google Chrome:
 
 1. **Clone this repository** to your local machine:
     ```bash
