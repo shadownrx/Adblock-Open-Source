@@ -24,13 +24,13 @@ Follow these steps to install and test the Super Adblocker on Google Chrome:
 
 4. **Click on "Load unpacked"** and select the folder where you cloned this repository.
 
-5. **Activate the extension** by clicking on the Super Adblocker icon in the Chrome toolbar.
+5. **Activate the extension** by clicking on the Adblock Open Source icon in the Chrome toolbar.
 
 6. **Customize your settings** via the extension's popup to block ads, cookies, and IPs according to your preferences.
 
 ## Contributing
 
-We welcome contributions to improve the Super Adblocker! Feel free to fork this repository and submit a pull request with your changes.
+We welcome contributions to improve the Adblock Open Source! Feel free to fork this repository and submit a pull request with your changes.
 
 ## License
 
