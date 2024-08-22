@@ -1,6 +1,6 @@
 {
-    "manifest_version": 1.0,
-    "name": "Super Adblocker",
+    "manifest_version": 1,
+    "name": "Adblock Open Source",
     "version": "1",
     "description": "Blocks ads and cookie notifications, except on YouTube.",
     "permissions": ["webRequest", "webRequestBlocking", "declarativeNetRequest", "activeTab", "storage"],
