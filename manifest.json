@@ -1,9 +1,15 @@
 {
-    "manifest_version": 1,
+    "manifest_version": 3,
     "name": "Adblock Open Source",
-    "version": "1",
+    "version": "1.0",
     "description": "Blocks ads and cookie notifications, except on YouTube.",
-    "permissions": ["webRequest", "webRequestBlocking", "declarativeNetRequest", "activeTab", "storage"],
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "declarativeNetRequest",
+      "activeTab",
+      "storage"
+    ],
     "background": {
       "service_worker": "background.js"
     },
