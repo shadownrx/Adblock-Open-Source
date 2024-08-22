@@ -5,7 +5,8 @@ const blockedDomains = [
     "*://*.adserver.yahoo.com/*",
     "*://*.googlesyndication.com/*",  // Ejemplo adicional
     "*://*.facebook.com/ads/*",        // Ejemplo adicional
-    "*://*.twitter.com/ads/*"          // Ejemplo adicional
+    "*://*.twitter.com/ads/*",
+    "*://*.freepik.com/*"          // Ejemplo adicional
 ];
 
 chrome.runtime.onInstalled.addListener(() => {
