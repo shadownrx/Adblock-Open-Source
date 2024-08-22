@@ -15,7 +15,7 @@ Follow these steps to install and test the Super Adblocker on Google Chrome:
 
 1. **Clone this repository** to your local machine:
     ```bash
-    git clone https://github.com/tu-usuario/super-adblocker.git
+    git clone https://github.com/shadownrx/Adblock-Open-Source
     ```
 
 2. **Open Google Chrome** and navigate to `chrome://extensions/`.
