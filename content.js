@@ -1,17 +1,17 @@
-const cookieSelectors = [
-    ".cookie-banner",
-    ".cookie-consent",
-    "#cookie-popup",
-    ".cookie-notice"
+const adSelectors = [
+    'iframe[src*="ads"]',          // Bloquea iframes que cargan anuncios
+    'div[class*="ad-"]',           // Bloquea divs con clase relacionada a anuncios
+    'script[src*="ads"]',          // Bloquea scripts relacionados con anuncios
+    'video[src*="ads"]'            // Bloquea videos que cargan anuncios
 ];
 
-window.addEventListener('load', () => {
-    chrome.storage.sync.get(['blockCookies'], (result) => {
-        if (result.blockCookies !== false) {
-            cookieSelectors.forEach(selector => {
-                const elements = document.querySelectorAll(selector);
-                elements.forEach(el => el.remove());
-            });
-        }
+function removeAds() {
+    adSelectors.forEach(selector => {
+        const ads = document.querySelectorAll(selector);
+        ads.forEach(ad => ad.remove());
     });
-});
+}
+
+// Ejecuta la función en el inicio del documento y luego periódicamente
+removeAds();
+setInterval(removeAds, 1000);

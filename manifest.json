@@ -4,11 +4,10 @@
     "version": "1.0",
     "description": "Blocks ads and cookie notifications, except on YouTube.",
     "permissions": [
-      "webRequest",
-      "webRequestBlocking",
-      "declarativeNetRequest",
-      "activeTab",
-      "storage"
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess",
+        "activeTab",
+        "storage"
     ],
     "background": {
       "service_worker": "background.js"
