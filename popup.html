@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adblock</title>
-    <link rel="stylesheet" href="styles/popup.css">
+    <title>Adblock Open Source</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="styles/popup.css">
 </head>
 <body>
-    <h3>Adblocker</h3>
-    <div>
-        <input type="checkbox" id="blockAds" checked>
-        <label for="blockAds">Block Ads</label>
+    <div id="popup-container">
+        <h1>Adblock</h1>
+        <div id="status-container">
+            <label>
+                <input type="checkbox" id="block-ads-checkbox">
+                Block Ads
+            </label>
+            <label>
+                <input type="checkbox" id="block-cookies-checkbox">
+                Block Cookies
+            </label>
+        </div>
+        <button id="save-button">Save Changes</button>
     </div>
-    <div>
-        <input type="checkbox" id="blockCookies" checked>
-        <label for="blockCookies">Block Cookies</label>
-    </div>
-    <button id="saveSettings">Save Settings</button>
     <script src="popup.js"></script>
 </body>
 </html>

@@ -1,18 +1,21 @@
+
 body {
     font-family: 'Arial', sans-serif;
     width: 300px;
     padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #2e2e2e;
+    color: #e0e0e0;
     margin: 0;
     box-sizing: border-box;
 }
+
 
 #popup-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 h1 {
     font-size: 24px;
@@ -26,12 +29,13 @@ h1 {
     margin-bottom: 20px;
 }
 
+
 label {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
     font-size: 16px;
-    color: #555;
+    color: #e0e0e0;
 }
 
 input[type="checkbox"] {
@@ -54,9 +58,9 @@ input[type="checkbox"] {
 
 #save-button:hover {
     background-color: #45a049;
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 #save-button:active {
-    background-color: #388e3c; 
+    background-color: #388e3c;
 }

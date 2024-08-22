@@ -1,17 +1,46 @@
-const adSelectors = [
-    'iframe[src*="ads"]',          // Bloquea iframes que cargan anuncios
-    'div[class*="ad-"]',           // Bloquea divs con clase relacionada a anuncios
-    'script[src*="ads"]',          // Bloquea scripts relacionados con anuncios
-    'video[src*="ads"]'            // Bloquea videos que cargan anuncios
+const cookieSelectors = [
+    '.cookie-banner',        
+    '.cookie-consent',       
+    '#cookie-popup',         
+    'div[data-testid="cookieBanner"]',
+    '.cookie-notification',
+    '.cookie-message',
+    '.cookie-popup',
+    '.cookie-modal',
+    '.cookie-wrapper',
+    '.consent-banner',
+    '.consent-popup',
+    '#cookieConsent',
+    '#cookieConsentBanner',
+    '.privacy-popup',
+    '.accept-cookies',
+    '.cookie-overlay',
+    'aside',
+    'span'
 ];
 
-function removeAds() {
-    adSelectors.forEach(selector => {
-        const ads = document.querySelectorAll(selector);
-        ads.forEach(ad => ad.remove());
+function removeCookieMessages() {
+    cookieSelectors.forEach(selector => {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach(element => element.remove());
     });
 }
 
-// Ejecuta la función en el inicio del documento y luego periódicamente
-removeAds();
-setInterval(removeAds, 1000);
+document.addEventListener('DOMContentLoaded', () => {
+    removeCookieMessages();
+    setInterval(removeCookieMessages, 1000);
+
+    // Configura el MutationObserver
+    const observer = new MutationObserver(() => {
+        removeCookieMessages();
+    });
+
+    if (document.body) {
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    } else {
+        console.error('document.body no está disponible para observar.');
+    }
+});
